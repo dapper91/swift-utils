@@ -20,7 +20,7 @@ class MyClass {
 
     func secondFunc()
     {
-        cond.lock() // it's safe to lock the same condition variable multiple times in the single thread 
+        cond.lock() // it's safe to lock the same condition variable multiple times in a single thread 
         defer { cond.unlock() }
 
         print("test message")
